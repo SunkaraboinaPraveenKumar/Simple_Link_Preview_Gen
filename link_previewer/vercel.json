@@ -1,0 +1,9 @@
+{
+    "builds": [
+      {
+        "src": "tsconfig.app.json",
+        "use": "@vercel/node"
+      }
+    ]
+  }
+  
