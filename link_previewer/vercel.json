@@ -1,8 +1,18 @@
 {
     "builds": [
       {
-        "src": "tsconfig.app.json",
+        "src": "src/**/*.ts",
         "use": "@vercel/node"
+      },
+      {
+        "src": "index.html",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
       }
     ]
   }
